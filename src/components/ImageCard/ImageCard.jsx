@@ -1,10 +1,16 @@
-const ImageCard = (item) => {
-  return (
-    <li><img src={item.urls.small}
-    alt={item.slug}
-    // onClick={() => onClick(item.urls.regular)}
-    style={{ cursor: "pointer" }} /></li>
-  )
-}
+import s from "./ImageCard.module.css";
 
-export default ImageCard
+const ImageCard = ({ item, onClick }) => {
+  return (
+    <li className={s.card}>
+      <img
+        src={item.urls.small}
+        alt={item.slug}
+        onClick={() => onClick(item.urls.regular)}
+        style={{ cursor: "pointer" }}
+      />
+    </li>
+  );
+};
+
+export default ImageCard;

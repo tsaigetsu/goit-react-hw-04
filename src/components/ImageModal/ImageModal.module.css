@@ -1,0 +1,13 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #72727221;
+    padding: 20px;
+  }
+
+  .modalImage {
+    width: 600px;
+    height: auto;
+  }
